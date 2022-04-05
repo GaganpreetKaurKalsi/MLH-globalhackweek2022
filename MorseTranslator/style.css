@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Roboto&display=swap');
+
+body{
+    font-family: 'Nunito', sans-serif;
+    box-sizing: border-box;
+    background: rgb(255,255,255);
+background: linear-gradient(-90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(124,185,232,1) 100%);
+}
+.head{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin-top: 80px;
+    
+}
+
+.globalHackWeekImg{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 150px;
+    height: auto;
+}
+
+.container-wrapper{
+    display: flex;
+    padding: 50px;
+    height: 400px;
+}
+.container-wrapper span svg{
+     height: 20px;
+     width: 50px;
+     vertical-align: middle;
+}
+.left-container, .right-container{
+    width: 50%;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.right-container{
+    vertical-align: middle;
+    display: inline-block;
+    align-items: center;
+    position:relative;
+}
+.right-container span{
+    /* position: absolute; */
+    /* top: 40%; */
+    width: 100%;
+    /* left: 0;
+    z-index: -1; */
+    color: #7a7a7a;
+    font-size: 24px;
+    opacity: 0.4;
+    font-weight: 800;
+}
+
+.fromLang, .toLang{
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 0 10px;
+    padding: 5px 20px;
+    border-radius: 50px;
+    background-color: rgb(243, 243, 243);
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+
+.translateText{
+    box-sizing: border-box;
+}
+
+.translateText textarea{
+    margin-top: 50px;
+    border-radius: 10px;
+    resize: unset;
+    border: 2px solid lightgray;
+    background-color: rgb(243, 243, 243);
+    padding: 20px;
+    font-size: 16px;
+}
+
+.translateText textarea:focus, .translateText textarea::selection, .translateText textarea:visited{
+    border: 2px solid #89CFF0;
+    outline: none;
+}
+
+.translateBtn{
+    background-color:#24ac51;
+    color: white;
+    border:none;
+    outline:none;
+    padding: 10px 20px;
+    font-size: 18px;
+    margin-top: 10px;
+    width: 100%;
+    font-weight: bold;
+}
+
+.translateBtn:hover{
+    background-color:#0c8f37;
+    cursor: pointer;
+}
+.right-container .result{
+    color: rgb(29, 29, 29);
+    font-size: 24px;
+    opacity:1;
+    z-index: 1;
+    position: absolute;
+    display: block;
+    top:45%;
+    width: 60%;
+    margin:0 20%;
+    overflow-wrap: break-word;
+}
+.interchange{
+    cursor: pointer;
+    margin: 0 30px;
+    width: 50px;
+    height: 50px;
+    display: inline-flex;
+    vertical-align: middle;
+    align-items: center;
+    border-radius: 100px;
+}
+.interchange:hover{
+    background-color: #ffffff;
+}
